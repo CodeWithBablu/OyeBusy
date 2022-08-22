@@ -227,6 +227,16 @@ export const cleaningServices = [
     title: "Professional Deep Cleaning",
     description: "For spring clean for end of lease clean"
   },
+  {
+    id: "5",
+    title: "Professional Deep Cleaning",
+    description: "For spring clean for end of lease clean"
+  },
+  {
+    id: "6",
+    title: "Professional Deep Cleaning",
+    description: "For spring clean for end of lease clean"
+  },
 ];
 
 export const elecServices = [

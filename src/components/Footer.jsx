@@ -19,15 +19,16 @@ const comment = <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-
   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
 </svg>;
 
+
 export default function Footer() {
   return (
-    <div className='flex flex-col justify-center items-center w-full p-10 bg-primary'>
+    <div className='flex flex-col justify-center items-center w-full lg:p-10 bg-primary'>
 
-      <div className=' flex items-center justify-around h-[420px] w-[1730px] bg-slate-800'>
-        <img src={Women} className=" w-[420px] h-[420px] object-cover rounded-full p-4" alt="" />
-        <div className='flex flex-col pl-10 justify-center w-[800px] h-[360px] bg-gray-900 rounded-xl '>
-          <h1 className=' text-4xl font-semibold font-poppins text-green-500'>Why People Choose Us</h1>
-          <ul className='pl-10 list-disc text-dimWhite text-xl mt-5 font-poppins font-medium'>
+      <div className=' flex items-center justify-around w-full xl:w-[1730px] p-5 xl:h-[420px] bg-slate-800'>
+        <img src={Women} className=" w-[120px] h-[120px] sm:w-[200px] sm:h-[200px] xl:w-[420px] xl:h-[420px] object-cover rounded-full p-4" alt="" />
+        <div className='flex flex-col pl-10 justify-center xl:w-[800px] xl:h-[360px] rounded-xl '>
+          <h1 className=' text-sm font-normal sm:font-semibold sm:text-xl md:text-2xl lg:text-4xl  font-poppins text-cyan-400'>Why People Choose Us</h1>
+          <ul className='sm:pl-10 list-disc text-dimWhite text-[12px] lg:text-xl mt-5 font-poppins sm:font-medium'>
             <li>Affordable Rates</li>
             <li>30 days Srevice guarantee</li>
             <li>On time service</li>
@@ -37,13 +38,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className=' w-[1450px] h-[340px] flex flex-col items-center mt-10'>
+      <div className=' w-full xl:w-[1450px] h-[340px] flex flex-col items-center mt-10'>
 
-        <h1 className=' my-10 text-white text-4xl font-dynapuff font-semibold'>What Our Customer Say</h1>
+        <h1 className=' my-10 text-white text-xl sm:text-4xl font-dynapuff font-semibold'>What Our Customer Say</h1>
         <div className=' flex items-center w-full h-full overflow-x-scroll scroll  scroll-smooth scrollbar-hide'>
           {
             customerReviews.map((review) => (
-              <div className=' inline-block px-6 hover:scale-105 duration-200 ease-in-out cursor-pointer'>
+              <div className=' inline-block px-3 xl:px-6 hover:scale-105 duration-200 ease-in-out cursor-pointer'>
                 <div key={review.id} className=' w-[300px] h-[190px] rounded-md shadow-lg bg-gray-800 shadow-cyan-200'>
                   <div className=' flex flex-col p-2'>
                     <span className='p-2'>{comment}</span>
@@ -59,20 +60,20 @@ export default function Footer() {
 
       </div>
 
-      <div className=' mt-12'>
+      <div className='mt-5 sm:mt-12'>
         <img src={Refer} alt="" />
       </div>
 
-      <div className=' my-12'>
+      <div className='mt-5 mb-20 sm:my-20'>
         <img src={Trademark} alt="" />
       </div>
 
       {/* //// Footer */}
-      <div className=' w-full'>
+      <div className='hidden md:block w-full'>
 
-        <div className='flex pt-10 justify-around bg-gray-800'>
-          <h2 className=' text-md text-white font-poppins font-semibold'>Related Services</h2>
-          <div className='flex flex-wrap space-x-3 w-[1280px] h-[50px] '>
+        <div className='flex p-10 justify-between xl:justify-around bg-gray-800'>
+          <h2 className=' w-44 text-md text-cyan-300 font-poppins font-semibold'>Related Services</h2>
+          <div className='flex flex-wrap space-x-3 w-full xl:w-[1280px] h-[50px] '>
 
             <a className=' text-md text-gray-200 font-poppins font-medium hover:scale-105 duration-150 ease-in-out' href="">Electrician</a>
             <hr className=' bg-dimWhite border-x-2 h-5 rounded-xl' />
@@ -100,9 +101,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className='flex pt-10 justify-around bg-gray-800'>
-          <h2 className=' text-md text-white font-poppins font-semibold'>Top Location</h2>
-          <div className='flex flex-wrap text-left space-x-3 w-[1280px] h-[50px] '>
+        <div className='flex p-10 justify-between xl:justify-around bg-gray-800'>
+          <h2 className=' w-44 text-md text-cyan-300 text-md font-poppins font-semibold'>Top Location</h2>
+          <div className='flex flex-wrap text-left space-x-3 xl:w-[1280px] h-[50px] '>
 
             <a className=' text-md text-gray-200 font-poppins font-medium hover:scale-105 duration-150 ease-in-out' href="">Pune</a>
             <hr className=' bg-dimWhite border-x-2 h-5 rounded-xl' />
@@ -124,7 +125,7 @@ export default function Footer() {
 
         <div className='flex pt-10 justify-center items-center bg-gray-800'>
 
-          <div className='flex justify-center items-center text-left space-x-16 w-[1280px] h-[50px] '>
+          <div className='flex justify-center items-center text-left space-x-4 lg:space-x-8 xl:space-x-16 w-[1280px] h-[50px] '>
 
             <a className=' text-md text-gray-200 font-poppins font-medium hover:scale-105 duration-150 ease-in-out' href="">About Us</a>
 
